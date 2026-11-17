@@ -1,0 +1,13 @@
+{
+    "config": {
+        "platform": {
+            "php": "7.4.26"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "STCode\\": "src/"
+        }
+    }
+
+}

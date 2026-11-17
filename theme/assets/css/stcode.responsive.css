@@ -1,0 +1,1042 @@
+.monify-comparison .group-section {
+    width: 100%;
+    margin: 1.5rem auto 2rem;
+}
+
+.monify-pair {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.monify-pair-card {
+    min-width: 0;
+    padding: 0.75rem;
+    border: 1px solid #eee;
+    border-radius: 7px;
+}
+
+.monify-pair-card .list__card {
+    flex-wrap: wrap;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.monify-pair-card .list__cta,
+.monify-pair-card select {
+    width: 100%;
+    margin: 0.5rem 0 0;
+}
+
+.monify-pair-card select {
+    min-height: 44px;
+    border: 1px solid #b8c7c5;
+    border-radius: 5px;
+    background: #fff;
+    color: #273b38;
+    font: inherit;
+}
+
+.monify-pair-card label {
+    display: block;
+    font-weight: 600;
+}
+
+.monify-update-comparison {
+    display: block;
+    min-height: 44px;
+    margin: 1rem auto;
+}
+
+.monify-comparison-message {
+    text-align: center;
+}
+
+.monify-comparison-table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: separate;
+    border-spacing: 0;
+    overflow-wrap: anywhere;
+}
+
+.monify-comparison-table th,
+.monify-comparison-table td {
+    border-bottom: 1px solid #edf2f0;
+    padding: 0.75rem;
+    text-align: left;
+    vertical-align: top;
+}
+
+.monify-comparison-table .row-section__title {
+    display: table-cell;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.monify-comparison-table ul {
+    padding-inline-start: 1.2em;
+    margin: 0;
+}
+
+.monify-comparison-table thead th:first-child {
+    width: 29%;
+    font-size: 1rem;
+    line-height: 1.3;
+}
+
+.monify-compare-bar {
+    position: fixed;
+    z-index: 999;
+    inset: auto 0 0;
+    padding: 0.65rem 1rem max(0.65rem, env(safe-area-inset-bottom));
+    background: #fff;
+    box-shadow: 0 0 16px #0002;
+}
+
+.monify-compare-active {
+    padding-bottom: 7rem;
+}
+
+.monify-compare-bar-inner,
+.monify-compare-bar form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem 1rem;
+}
+
+.monify-compare-bar p {
+    margin: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    font-weight: 600;
+}
+
+.monify-compare-bar .button {
+    margin: 0;
+    min-height: 44px;
+}
+
+.monify-compare-bar button:disabled {
+    opacity: 0.55;
+    cursor: default;
+}
+
+@media (max-width: 999px) {
+    .monify-home .hjxs {
+        padding: clamp(1.75rem, 6vw, 4rem) 0 0;
+        overflow: hidden;
+    }
+
+    .monify-home .stcode-align-container {
+        padding-inline: clamp(1rem, 4vw, 2rem);
+    }
+
+    .monify-home .mJnx {
+        font-size: clamp(1.9rem, 5.5vw, 3.25rem);
+        line-height: 1.07;
+    }
+
+    .monify-home .mJnx--txt {
+        font-size: clamp(1rem, 3vw, 1.45rem);
+        margin: 1rem 0;
+    }
+
+    .monify-home .kJz--txt {
+        font-size: clamp(1.25rem, 4vw, 2rem);
+    }
+
+    .monify-home .a-bloc-text {
+        flex: 1 1 56%;
+        max-width: 100%;
+    }
+
+    .monify-home .a-bloc-hero {
+        min-height: 200px;
+        display: grid;
+        flex: 1 1 36%;
+        max-width: 100%;
+        align-items: end;
+        overflow: hidden;
+    }
+
+    .monify-home .a-bloc-hero picture {
+        grid-area: 1 / 1;
+    }
+
+    .monify-home .a-bloc-hero::after {
+        inset: auto 0 0;
+        width: 100%;
+        height: 60%;
+    }
+
+    .monify-home .a-bloc-hero [data-loader] {
+        position: relative;
+        inset: auto;
+        width: 100%;
+        max-width: 310px;
+        height: auto;
+        margin-inline: auto;
+    }
+
+    .monify-home .c-tabs {
+        position: static;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 0.35rem;
+        margin: 0.75rem 0 0;
+    }
+
+    .monify-home .c-tabs li {
+        min-width: 0;
+        margin: 0;
+        padding: 0.7rem 0.3rem;
+        font-size: clamp(0.78rem, 2.4vw, 1.1rem);
+    }
+
+    .monify-home .a-bloc-choice {
+        flex: 1 1 100%;
+        max-width: 100%;
+        padding: 1rem 0;
+        gap: 1rem;
+    }
+
+    .monify-home .a-bloc-quiz {
+        display: none;
+    }
+
+    .monify-home .cadsx-item {
+        flex: 1 1 11rem;
+        width: auto;
+        min-width: 0;
+    }
+
+    .monify-home .cadsx-item-full {
+        flex-wrap: wrap;
+        margin: 0.8rem 0;
+    }
+
+    .monify-home .a-bloc-kMx {
+        overflow: hidden;
+    }
+
+    .monify-home .Whsxal img,
+    .monify-home .i-m-3 img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 640px) {
+    .mnx--pRNX-main {
+        gap: 0.5rem;
+    }
+
+    .pRNX--lxs {
+        flex-wrap: wrap;
+        gap: 0.25rem 0.6rem;
+    }
+
+    .pRNX--lxs .lknx {
+        padding-inline: 0.2rem;
+    }
+
+    .pRNX--lxs .lknx a {
+        font-size: 0.9rem;
+    }
+
+    .monify-home .colum--hx2 {
+        display: block;
+    }
+
+    .monify-home .a-bloc-hero {
+        min-height: 0;
+        max-width: 240px;
+        margin: 1rem auto 0;
+    }
+
+    .monify-home .go-to-quizz {
+        margin-left: 0;
+        max-width: 100%;
+    }
+
+    .monify-home .footer_FXAS,
+    .monify-home .bdmx,
+    .monify-home .llnk--Mnft {
+        flex-wrap: wrap;
+    }
+
+    .monify-card-catalog.container,
+    .monify-comparison.container-section {
+        padding-inline: 1rem;
+    }
+
+    .monify-card-catalog .list__details {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .monify-card-catalog .f-cta {
+        flex-wrap: wrap;
+    }
+
+    .monify-card-catalog .cta__button {
+        min-height: 44px;
+    }
+
+    .monify-comparison .h__headline h1 {
+        font-size: 1.65rem;
+        line-height: 1.15;
+    }
+
+    .monify-comparison .group-section {
+        padding: 0.65rem;
+    }
+
+    .monify-pair {
+        gap: 0.45rem;
+    }
+
+    .monify-pair-card {
+        padding: 0.4rem;
+        font-size: 0.9rem;
+    }
+
+    .monify-pair-card .item__headline h3 {
+        font-size: 1rem;
+        line-height: 1.2;
+    }
+
+    .monify-pair-card .list__cta .button {
+        display: block;
+        min-height: 44px;
+        padding: 0.55rem 0.25rem;
+        white-space: normal;
+    }
+
+    .monify-comparison-table th,
+    .monify-comparison-table td {
+        padding: 0.48rem 0.3rem;
+        font-size: 0.82rem;
+    }
+
+    .monify-comparison-table th:first-child {
+        font-size: 0.84rem;
+    }
+}
+
+.monify-catalog-filters summary {
+    display: none;
+}
+
+@media (max-width: 999px) {
+    .monify-home .newsletter-kax {
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 100%;
+        gap: 0.75rem;
+    }
+
+    .monify-home .newsletter-form {
+        flex: 1 1 14rem;
+        min-width: 0;
+    }
+
+    .monify-home .newsletter-form input[type="email"] {
+        width: 100%;
+        min-width: 0;
+    }
+}
+
+@media (max-width: 880px) {
+    .monify-catalog-filters summary {
+        display: list-item;
+        margin: 0.5rem 0 0.75rem;
+        padding: 0.7rem 1rem;
+        border: 1px solid #b8c7c5;
+        border-radius: 7px;
+        background: #fff;
+        color: #273b38;
+        font-weight: 600;
+        cursor: pointer;
+    }
+
+    .monify-card-catalog .shop__filters-left {
+        padding-inline: 0;
+    }
+}
+
+@media (max-width: 640px) {
+    .monify-home .cJnxza .colum--hx2 {
+        display: grid;
+        gap: 1.5rem;
+    }
+
+    .monify-home .i-m-3 {
+        max-width: none;
+        width: 100%;
+    }
+
+    .monify-home .i-m-3 img {
+        max-height: 190px;
+        object-fit: contain;
+    }
+
+    .monify-home .newsletter-kax {
+        justify-content: center;
+    }
+
+    .monify-home .newsletter-form {
+        flex-basis: 100%;
+    }
+}
+
+.monify-card-catalog .filter__rule-input {
+    display: block;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.monify-card-catalog .filter__rule-input:focus-visible + label {
+    outline: 2px solid #1b8278;
+    outline-offset: 2px;
+}
+
+@media (max-width: 767px) {
+    .monify-home .Mxca {
+        padding: 2.75rem 0;
+        margin: 0;
+    }
+
+    .monify-home .cJnxza {
+        padding-block: 3rem;
+    }
+
+    .monify-home #about-us .colum {
+        gap: 1.5rem;
+    }
+
+    .monify-home .a-bloc-kMx,
+    .monify-home .b-video {
+        flex: 1 1 100%;
+        max-width: 100%;
+    }
+
+    .monify-home .b-video {
+        padding-bottom: 0;
+        aspect-ratio: 16 / 9;
+    }
+
+    .monify-home #about-us p {
+        font-size: 1rem;
+    }
+}
+
+/* Cartões do catálogo */
+.monify-card-catalog .cartao-modulo {
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.monify-card-catalog .cartao-modulo .item {
+    box-sizing: border-box;
+    min-width: 0;
+}
+
+.monify-card-catalog .cartao-modulo .two-top {
+    grid-template-columns: minmax(0, 1fr) auto;
+    gap: 0.75rem;
+}
+
+.monify-card-catalog .cartao-modulo .list-flex {
+    display: flex;
+    min-width: 0;
+    justify-content: flex-start;
+    gap: 0.75rem;
+}
+
+.monify-card-catalog .cartao-modulo .list__title {
+    padding: 0;
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.monify-card-catalog .cartao-modulo .item__stars {
+    flex-wrap: wrap;
+}
+
+.monify-card-catalog .cartao-modulo .color-gray {
+    color: #80f7bc;
+    margin-top: 0.85rem;
+}
+
+.monify-card-catalog .cartao-modulo .list__details {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    margin: 0.9rem 0 0;
+    padding: 0;
+}
+
+.monify-card-catalog .cartao-modulo .wrap__card--row {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.monify-card-catalog .cartao-modulo .f-cta {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+    overflow: visible;
+}
+
+.monify-card-catalog .cartao-modulo .f-cta .spce-line {
+    display: none;
+}
+
+.monify-card-catalog .cartao-modulo .f-cta .cta__button {
+    box-sizing: border-box;
+    min-width: 0;
+    min-height: 44px;
+    align-items: center;
+    font-size: 0.9rem;
+    line-height: 1.25;
+}
+
+@media (max-width: 767px) {
+    .monify-card-catalog > .row {
+        margin-inline: 0;
+    }
+
+    .monify-card-catalog > .row > .col-12 {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+    }
+
+    .monify-card-catalog .cartao-modulo {
+        margin-bottom: 1rem;
+    }
+
+    .monify-card-catalog .cartao-modulo .item {
+        padding: clamp(0.65rem, 3vw, 1rem);
+    }
+
+    .monify-card-catalog .cartao-modulo .two-top {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .monify-card-catalog .cartao-modulo .list__cta.show-for-medium {
+        display: block;
+        text-align: left;
+    }
+
+    .monify-card-catalog .cartao-modulo .list__cta .ahref {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.35rem 0.65rem;
+    }
+
+    .monify-card-catalog .cartao-modulo .list__cta .color-gray {
+        margin-top: 0;
+    }
+
+    .monify-card-catalog .cartao-modulo .list__card .list__img img {
+        width: clamp(48px, 15vw, 64px);
+        height: auto;
+    }
+
+    .monify-card-catalog .cartao-modulo .list__details {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 0.5rem;
+    }
+
+    .monify-card-catalog .cartao-modulo .wrap__card--row {
+        padding: 0.55rem 0.35rem;
+    }
+
+    .monify-card-catalog .cartao-modulo .f-cta .item-label > .show-for-medium {
+        display: none;
+    }
+}
+
+.monify-card-catalog .cartao-modulo .f-cta .item-label {
+    display: flex;
+    justify-content: center;
+    gap: 0.35rem;
+    padding: 0.45rem;
+    background: #303339;
+    color: #fff;
+}
+
+.monify-card-catalog .cartao-modulo .f-cta .item-label:has(.item-input:checked) {
+    color: #5bf2e9;
+}
+
+.monify-card-catalog .cartao-modulo .f-cta .item-input {
+    position: relative;
+    inset: auto;
+    flex: 0 0 auto;
+    margin: 0;
+}
+
+.monify-card-catalog .cartao-modulo .f-cta .item-label:focus-within {
+    outline: 2px solid #1b8278;
+    outline-offset: 2px;
+}
+
+@media (max-width: 767px) {
+    .monify-card-catalog .cartao-modulo .item::before {
+        content: none;
+    }
+}
+
+@media (min-width: 881px) {
+    .monify-card-catalog .cartao-modulo .item::before {
+        content: "";
+        position: absolute;
+        top: -44px;
+        right: -59px;
+        width: 55%;
+        height: 175%;
+        background-color: #303339;
+        transform: rotate(33deg);
+        z-index: -1;
+    }
+}
+
+@media (max-width: 880px) {
+    .monify-card-catalog > .row {
+        margin-inline: 0;
+    }
+
+    .monify-card-catalog > .row > .col-12 {
+        flex: 0 0 100%;
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        padding: 0;
+    }
+}
+
+/* Grade do catálogo */
+.monify-card-catalog.container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1180px;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.monify-card-catalog > .row {
+    display: grid;
+    grid-template-columns: 250px minmax(0, 1fr);
+}
+
+.monify-card-catalog > .row > .col-12 {
+    width: auto;
+    max-width: none;
+    min-width: 0;
+}
+
+.monify-card-catalog > .row > .right-col {
+    padding-right: 30px;
+}
+
+@media (max-width: 880px) {
+    .monify-card-catalog > .row {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .monify-card-catalog > .row > .col-12 {
+        padding: 0;
+    }
+}
+
+/* Melhores condições na comparação */
+.monify-comparison .monify-advantage-guide {
+    font-size: 0.9rem;
+    color: #52635f;
+    max-width: 42rem;
+    margin: 0.5rem auto 1rem;
+}
+
+.monify-comparison-table td.monify-condition-advantage {
+    background: #eafbf3;
+    box-shadow: inset 3px 0 #14956a;
+}
+
+.monify-advantage-badge {
+    display: block;
+    width: fit-content;
+    max-width: 100%;
+    margin-bottom: 0.45rem;
+    padding: 0.25rem 0.45rem;
+    border: 1px solid #a2ddbf;
+    border-radius: 5px;
+    background: #d5f5e4;
+    color: #145336;
+    font-size: 0.75rem;
+    font-weight: 600;
+    line-height: 1.25;
+}
+
+/* Comparador com a composição original */
+.monify-original-comparison .grid-x > .small-6 {
+    width: 50%;
+    min-width: 0;
+}
+
+.monify-original-comparison .grid-x > .small-12 {
+    width: 100%;
+    min-width: 0;
+}
+
+.monify-original-comparison .comparar-page {
+    border-right: 0;
+    padding-right: 0;
+    width: 100%;
+}
+
+.monify-original-comparison .group-section {
+    min-width: 0;
+}
+
+.monify-original-comparison .change_card {
+    flex: 1;
+    min-width: 0;
+}
+
+.monify-original-comparison .change_card .list__title {
+    padding: 0;
+    margin-top: 0.5rem;
+}
+
+.monify-original-card-switch {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+}
+
+.monify-original-card-switch label {
+    min-width: 0;
+    flex: 1 1 6rem;
+}
+
+.monify-original-card-switch select {
+    width: 100%;
+    min-height: 44px;
+    padding: 0.4rem;
+    border: 1px solid #bccbc7;
+    border-radius: 5px;
+    background: #fff;
+    color: #273b38;
+    font: inherit;
+}
+
+.monify-original-card-switch .monify-switch-submit {
+    min-height: 44px;
+    padding: 0.45rem 0.65rem;
+    border: 1px solid #bccbc7;
+    border-radius: 5px;
+    background: #f5f9f8;
+    color: #244741;
+    cursor: pointer;
+}
+
+.monify-original-comparison .list__details {
+    margin-inline: 0;
+    padding-inline: 0;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.monify-original-comparison .wrap__card--row,
+.monify-original-comparison .list__info {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.monify-original-comparison .wrap__card--row:has(.monify-advantage-badge),
+.monify-original-comparison .row-anuidade .list__info:has(.monify-advantage-badge) {
+    background: #eafbf3;
+    border-color: #a2ddbf;
+    border-radius: 7px;
+}
+
+.monify-original-comparison .monify-advantage-badge {
+    margin: 0.5rem auto 0;
+}
+
+@media (max-width: 640px) {
+    .monify-original-comparison .comparar-page .list__card {
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    .monify-original-comparison .comparar-page .list__img img {
+        width: 110px;
+    }
+
+    .monify-original-comparison .change_card {
+        width: 100%;
+    }
+
+    .monify-original-comparison .item__headline h3 {
+        font-size: 1rem;
+        line-height: 1.25;
+    }
+
+    .monify-original-comparison .comparar-page .list__details {
+        grid-template-columns: minmax(0, 1fr);
+        font-size: 0.85rem;
+    }
+
+    .monify-original-comparison .list__cta .button {
+        padding: 0.7rem 0.3rem;
+        font-size: 0.8rem;
+        white-space: normal;
+    }
+
+    .monify-original-comparison .row-section__title {
+        font-size: 1rem;
+        padding: 0.75rem;
+    }
+
+    .monify-original-comparison .row-list {
+        padding-inline: 0;
+        font-size: 0.85rem;
+    }
+}
+
+.monify-original-comparison .change_card {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+}
+
+.monify-original-comparison .change_card .list__title {
+    order: -1;
+}
+
+.monify-original-comparison .monify-original-card-switch {
+    margin: 0;
+}
+
+.monify-original-comparison {
+    position: relative;
+    padding-bottom: 7rem;
+}
+
+.monify-pair-update {
+    position: sticky;
+    top: 0.75rem;
+    width: fit-content;
+    max-width: 100%;
+    margin: 0.5rem auto 0;
+    padding: 0.5rem 0.75rem;
+    background: #fff;
+    border: 1px solid #dfeae6;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px #203a3020;
+    text-align: center;
+    z-index: 20;
+}
+
+.monify-pair-update .button {
+    margin: 0;
+    min-height: 44px;
+}
+
+.monify-pair-update button:disabled {
+    opacity: 0.55;
+    cursor: default;
+}
+
+.monify-pair-update p {
+    margin: 0.25rem 0 0;
+    font-size: 0.8rem;
+    color: #405951;
+}
+
+.monify-pair-update p:empty {
+    display: none;
+}
+
+.monify-editorial-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.monify-editorial-items li {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding: 0.6rem 0;
+    line-height: 1.5;
+}
+
+.monify-editorial-items i {
+    flex-shrink: 0;
+    font-size: 1.2rem;
+    margin-top: 0.1rem;
+    color: #128463;
+}
+
+.row-contras .monify-editorial-items i {
+    color: #a44545;
+}
+
+.monify-demo-note,
+.monify-empty-details {
+    color: #68756f;
+    font-size: 0.85rem;
+}
+
+/* Anuidade detalhada: destaque textual e valores alinhados */
+.monify-original-comparison .row-anuidade .list__info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.35rem 0.65rem;
+    min-height: 44px;
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+}
+
+.monify-original-comparison .row-anuidade .list__info:has(.monify-advantage-badge) {
+    background: transparent;
+    border: 0;
+}
+
+.monify-original-comparison .row-anuidade .monify-advantage-badge {
+    margin: 0 auto 0 0;
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    color: #14805b;
+    text-align: left;
+}
+
+/* Mesma altura para os indicadores dos dois cartões */
+.monify-original-comparison .row-details > .grid-x {
+    align-items: stretch;
+}
+
+.monify-original-comparison .row-details > .grid-x > .cell {
+    display: flex;
+}
+
+.monify-original-comparison .row-details .list__details {
+    flex: 1;
+    width: 100%;
+    margin-block: 0;
+    grid-auto-rows: 1fr;
+}
+
+.monify-original-comparison .row-details .wrap__card--row {
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Fichas e páginas editoriais do tema original */
+.monify-card-single.container-section,
+.monify-blog.container,
+.monify-blog-heading .container {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1180px;
+    padding-inline: 5%;
+    margin-inline: auto;
+}
+
+.monify-card-single .cartao__details {
+    grid-template-columns: minmax(80px, 40%) minmax(0, 1fr);
+}
+
+.monify-card-single .cartao__details .list__img {
+    width: 100%;
+}
+
+.monify-card-single .textos {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.monify-card-single .grid-d {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+}
+
+.monify-card-single .grid-d > .box-card {
+    width: 100%;
+    min-width: 0;
+}
+
+@media (max-width: 880px) {
+    .monify-card-single > .box-card > .row-details > .grid-x {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr);
+        gap: 1.25rem;
+    }
+
+    .monify-card-single > .box-card > .row-details > .grid-x > .cell {
+        width: 100%;
+        border-right: 0;
+    }
+
+    .monify-blog .articles {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 640px) {
+    .monify-card-single .box-card {
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+
+    .monify-card-single .grid-d {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .monify-card-single .cartao__details {
+        grid-template-columns: minmax(0, 1fr);
+        text-align: center;
+    }
+
+    .monify-card-single .cartao__details .list__img {
+        max-width: 180px;
+        margin-inline: auto;
+    }
+
+    .monify-blog .articles {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .container.single {
+        width: 100%;
+        padding-inline: 5%;
+    }
+
+    .container.single > .row {
+        margin-inline: 0;
+    }
+
+    .container.single .column-8 {
+        min-width: 0;
+        width: 100%;
+        padding-inline: 0;
+    }
+
+    .single--article__body-grid img {
+        max-width: 100%;
+        height: auto;
+    }
+}

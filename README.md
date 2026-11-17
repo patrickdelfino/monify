@@ -1,38 +1,70 @@
 # Monify
 
-Catálogo financeiro em WordPress com busca, filtros e comparação de dois cartões lado a lado. Esta edição executável de portfólio recria o fluxo central do Monify 1.0.2 e mantém o modelo de conteúdo do projeto. Os cartões, condições e valores da demonstração são fictícios.
+Portal de produtos financeiros desenvolvido por Patrick Delfino em PHP, JavaScript, WordPress e MySQL. O repositório reúne o tema original Monify 1.0.2, com os ajustes de responsividade e do comparador feitos para a demonstração de portfólio.
 
-**Tecnologias principais** — WordPress, PHP, MySQL/MariaDB e Docker Compose.
+## Executar localmente
 
-## Executar a demonstração
+Requer Git e Docker Compose.
 
-Com Git e Docker Compose disponíveis, clone este repositório e entre na pasta `monify`.
-
-```sh
+~~~sh
 git clone https://github.com/patrickdelfino/monify.git
 cd monify
-```
+~~~
 
-Crie um arquivo `.env` a partir de [`.env.example`](.env.example) e defina as duas senhas locais. Em seguida, execute:
+Copie [.env.example](.env.example) para .env e preencha MONIFY_DB_PASSWORD e MONIFY_ADMIN_PASSWORD.
 
-```sh
+~~~sh
 docker compose up -d wordpress
 docker compose run --rm --entrypoint sh cli /demo/setup.sh
-```
+~~~
 
-Abra [`http://localhost:8080`](http://localhost:8080) ou a porta que você definiu em `MONIFY_PORT`. O painel fica em `/wp-admin/`, com o usuário `monify-admin` e a senha que você definiu. O script pode ser executado novamente para atualizar os seis cartões fictícios sem duplicá-los.
+Abra [localhost:8080](http://localhost:8080). A porta pode ser alterada em MONIFY_PORT. O painel está em /wp-admin/, com usuário monify-admin e a senha definida no .env.
 
-## O que explorar
+O instalador ativa o tema, configura as URLs e carrega seis cartões fictícios. Pode ser executado novamente para atualizar esses mesmos cartões. O banco e o WordPress ficam em volumes locais.
 
-- **Catálogo.** Busque por título e filtre por bandeira, benefício ou renda mensal. O filtro de renda aceita cartões cuja exigência mínima cabe no valor informado. A paginação mantém os filtros selecionados.
-- **Comparação.** Selecione dois cartões da lista e compare anuidade, renda mínima, limite e benefícios. A seleção pode ser compartilhada pelo endereço da página.
-- **Administração.** Abra **Cartões** no painel do WordPress para consultar as fichas e alterar as condições. O tema usa tipos de conteúdo, taxonomias e metadados próprios.
+## Fluxos disponíveis
 
-## Estrutura
+- Página inicial com o design original, ilustrações, abas e configurações do tema.
+- Catálogo com busca, filtros por bandeira, benefício, categoria e faixa de renda mínima exigida.
+- Seleção de dois cartões preservada durante a filtragem e paginação.
+- Comparador no layout original, com um seletor por cartão e um botão de atualização que acompanha a rolagem.
+- Destaques para menor anuidade, maior limite, menor renda exigida e empates nos valores numéricos informados.
+- Fichas individuais com condições, benefícios, prós, contras e conteúdo complementar.
+- Blog e artigos com os templates originais.
+- Painel de produtos, metadados, taxonomias, configurações de aparência e SEO.
 
-- [`theme/functions.php`](theme/functions.php) registra o modelo, valida o salvamento, monta a consulta e verifica a seleção do comparador.
-- [`theme/index.php`](theme/index.php) apresenta catálogo, ficha individual e comparação.
-- [`scripts/seed.php`](scripts/seed.php) carrega o catálogo fictício.
-- [Estudo de caso](https://github.com/patrickdelfino/patrickdelfino/blob/main/projetos/monify.md) e [recortes do código original](https://github.com/patrickdelfino/patrickdelfino/tree/main/amostras/monify) documentam o escopo da versão 1.0.2.
+As condições, benefícios, prós e contras dos cartões Aurora, Brisa, Cedro, Duna, Estuário e Farol foram criados para esta demonstração. Os artigos e uploads da instalação original dependem de uma importação própria. A instalação limpa contém o conteúdo padrão do WordPress.
 
-A edição de portfólio cobre o fluxo de cartões. O quiz de recomendação, os catálogos de empréstimos e contas digitais e as integrações financeiras pertencem ao escopo descrito no estudo de caso.
+## Organização do código
+
+| Caminho | Responsabilidade |
+| --- | --- |
+| theme/inc/parts/lista-de-cartoes.php | Catálogo e filtros |
+| theme/inc/parts/comparar.php | Seleção, comparação e destaques |
+| theme/inc/parts/singles/cartao.php | Ficha do cartão |
+| theme/inc/parts/blog.php e theme/single.php | Páginas editoriais |
+| theme/assets/css/stcode.responsive.css | Ajustes de celular, tablet e desktop |
+| theme/assets/js/monify.archivelist.js | Filtros e seleção no catálogo |
+| theme/assets/js/monify.comparador.js | Atualização conjunta dos cartões |
+| theme/src | Classes do painel, campos, shortcodes e sitemap |
+| scripts/seed.php | Dados fictícios e menu da demonstração |
+
+## Revisão desta edição
+
+A revisão incluiu sintaxe de todos os arquivos PHP e JavaScript do pacote e verificações locais com PHP 8.3, WordPress e MariaDB.
+
+Foram corrigidos o salvamento das opções com permissão e nonce, os endpoints administrativos de imagem, a ordenação e pesquisa dos registros, a validação das consultas públicas, a recepção de respostas de questionários e a geração pública do sitemap. O comparador trata seleção repetida, produtos inexistentes e parâmetros malformados.
+
+A demonstração foi conferida em larguras de 320, 390, 768, 880 e 1280 px. Os comandos Docker Compose são fornecidos para instalação, com execução ainda pendente de validação em Docker.
+
+## Estado dos módulos
+
+O cadastro de questionários permanece desativado como na versão recebida. O quiz e o formulário de newsletter da home têm partes pendentes de integração. A demonstração não faz consultas de CPF ou score, não integra ofertas reais e não efetua solicitações de crédito.
+
+O sitemap personalizado é opcional e permanece desabilitado por padrão. Sua geração usa arquivos locais e deve ser validada com o volume real de conteúdo antes da ativação. A verificação de sintaxe abrange esses módulos, enquanto os testes de navegação desta edição se concentram no catálogo, comparador, fichas e blog.
+
+## Autoria e referências
+
+Projeto desenvolvido durante a atuação na Sarthemes, com os identificadores STCode preservados no código. A licença do tema consta em theme/style.css. Fontes, ícones e bibliotecas conservam seus créditos e avisos próprios.
+
+[Estudo de caso](https://github.com/patrickdelfino/patrickdelfino/blob/main/projetos/monify.md) · [Recortes do código original](https://github.com/patrickdelfino/patrickdelfino/tree/main/amostras/monify)

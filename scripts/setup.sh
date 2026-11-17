@@ -18,6 +18,8 @@ if ! wp core is-installed; then
         --admin_password="$MONIFY_ADMIN_PASSWORD" --skip-email
 fi
 
-wp theme activate monify-demo
+wp theme activate monify
 wp eval-file /demo/seed.php
+wp rewrite structure '/%postname%/' --hard
+wp rewrite flush --hard
 printf '\nCatálogo disponível em http://localhost:%s\n' "$MONIFY_PORT"

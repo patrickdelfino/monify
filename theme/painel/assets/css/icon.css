@@ -1,0 +1,15 @@
+.dashicons-admin-stcodes:before {
+    content: "";
+    background: url(../../../assets/imgs/copy/s.png) no-repeat center;
+    background-size: 20px 20px;
+    opacity: .6;
+}
+
+#adminmenu .current div.wp-menu-image.dashicons-admin-stcodes:before {
+    margin-top: 4px;
+}
+
+#adminmenu a.current:hover div.wp-menu-image:before,
+#adminmenu .current div.wp-menu-image:before {
+    opacity: 1;
+}
