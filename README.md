@@ -49,22 +49,14 @@ As condições, benefícios, prós e contras dos cartões Aurora, Brisa, Cedro, 
 | theme/src | Classes do painel, campos, shortcodes e sitemap |
 | scripts/seed.php | Dados fictícios e menu da demonstração |
 
-## Revisão desta edição
-
-A revisão incluiu sintaxe de todos os arquivos PHP e JavaScript do pacote e verificações locais com PHP 8.3, WordPress e MariaDB.
-
-Foram corrigidos o salvamento das opções com permissão e nonce, os endpoints administrativos de imagem, a ordenação e pesquisa dos registros, a validação das consultas públicas, a recepção de respostas de questionários e a geração pública do sitemap. O comparador trata seleção repetida, produtos inexistentes e parâmetros malformados.
-
-A demonstração foi conferida em larguras de 320, 390, 768, 880 e 1280 px. Os comandos Docker Compose são fornecidos para instalação, com execução ainda pendente de validação em Docker.
-
 ## Estado dos módulos
 
-O cadastro de questionários permanece desativado como na versão recebida. O quiz e o formulário de newsletter da home têm partes pendentes de integração. A demonstração não faz consultas de CPF ou score, não integra ofertas reais e não efetua solicitações de crédito.
+O cadastro de questionários permanece desativado. O quiz e o formulário de newsletter da home têm partes pendentes de integração. A demonstração não faz consultas de CPF ou score, não integra ofertas reais e não efetua solicitações de crédito.
 
 O sitemap personalizado é opcional e permanece desabilitado por padrão. Sua geração usa arquivos locais e deve ser validada com o volume real de conteúdo antes da ativação. A verificação de sintaxe abrange esses módulos, enquanto os testes de navegação desta edição se concentram no catálogo, comparador, fichas e blog.
 
 ## Autoria e referências
 
-Projeto desenvolvido durante a atuação na Sarthemes, com os identificadores STCode preservados no código. A licença do tema consta em theme/style.css. Fontes, ícones e bibliotecas conservam seus créditos e avisos próprios.
+Projeto desenvolvido durante a atuação na Sarthemes, A licença do tema consta em theme/style.css. Fontes, ícones e bibliotecas conservam seus créditos e avisos próprios.
 
 [Estudo de caso](https://github.com/patrickdelfino/patrickdelfino/blob/main/projetos/monify.md) · [Recortes do código original](https://github.com/patrickdelfino/patrickdelfino/tree/main/amostras/monify)
