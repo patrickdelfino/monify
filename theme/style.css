@@ -1,0 +1,42 @@
+/*
+Theme Name: Monify Demo
+Description: Edição de portfólio do catálogo e comparador Monify.
+Version: 1.0.0
+Requires PHP: 8.2
+Author: Patrick Delfino
+Text Domain: monify-demo
+*/
+
+:root {
+    font: 16px/1.55 Inter, system-ui, sans-serif;
+    color: #152e2b;
+    background: #f3f7f5;
+}
+
+body { margin: 0; }
+a { color: #135b49; text-underline-offset: .18em; }
+.site-header { display: flex; align-items: baseline; gap: 1.5rem; padding: 1rem max(1rem, calc((100vw - 68rem) / 2)); background: #12382d; color: #e3f0eb; }
+.site-header a { color: white; font-size: 1.4rem; font-weight: 750; text-decoration: none; }
+main { max-width: 68rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+h1 { margin: 0 0 1.25rem; font-size: clamp(2rem, 5vw, 3rem); line-height: 1.1; letter-spacing: -.04em; }
+h2 { margin: 0; font-size: 1.2rem; }
+.filters, article, table, main > dl { background: white; border: 1px solid #bfcfc7; border-radius: .7rem; }
+.filters { display: flex; flex-wrap: wrap; align-items: end; gap: .75rem; padding: 1rem; }
+.filters label { display: grid; gap: .25rem; flex: 1 0 9rem; }
+input, select, button { font: inherit; }
+.filters input, select { min-width: 0; padding: .45rem .55rem; border: 1px solid #82998d; border-radius: .35rem; background: white; color: inherit; }
+button { padding: .48rem .9rem; border: 1px solid #135b49; border-radius: .4rem; background: #135b49; color: white; cursor: pointer; }
+:focus-visible { outline: 3px solid #a14c1c; outline-offset: 3px; }
+fieldset { padding: 0; border: 0; margin: 1.25rem 0 0; min-inline-size: 0; }
+legend { font-weight: 650; margin-bottom: .55rem; }
+.cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr)); gap: .8rem; margin-bottom: .9rem; }
+article, main > dl { padding: 1rem; }
+dl { display: grid; gap: .45rem; }
+dt { font-size: .85rem; }
+dd { margin: 0; font-weight: 650; }
+.option { display: flex; align-items: baseline; gap: .35rem; }
+.notice { border-left: 4px solid #a14c1c; padding: .45rem .85rem; background: #fff5ed; }
+table { width: 100%; border-spacing: 0; overflow-wrap: anywhere; }
+th, td { padding: .65rem .8rem; text-align: left; border-bottom: 1px solid #dce6e0; }
+tbody tr:last-child :is(th, td) { border-bottom: 0; }
+.pages { display: flex; gap: .85rem; margin-top: 1.25rem; }
